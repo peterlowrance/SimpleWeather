@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body class="container-fluid bg-secondary">
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand"><h1 id="title">Weather in </h1></span>
+    <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
+</nav>
+<div class="row">
+    <div class="col-lg-4">
+        <div id="card0">
+            <div class="float-none card shadow bg-light m-3">
+                <h4 id="card0Title" class="card-header"></h4>
+                <div class="card-body">
+                    <div class="float-left">
+                        <img class="border border-secondary border-2 rounded-lg w-100" alt="Weather Icon">
+                    </div>
+                    <div class="float-right pr-1 pt-1">
+                        <h1>25 F</h1>
+                    </div>
+                    <div class="float-left card-text"><h5 id="desc"></h5></div>
+                    <div class="float-left card-text"><h5 id="vis"></h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div id="content" class="row">
+            <div id="card1" class="col-lg-4 col-md-6">
+                <div class="float-none card shadow bg-light m-3">
+                    <h5 class="card-header">Tuesday 11/19</h5>
+                    <div class="card-body">
+                        <div class="float-left ">
+                            <img class="border border-secondary border-2 rounded-lg" alt="Weather Icon">
+                        </div>
+                        <div class="float-right pr-1 pt-1">
+                            <h1>25 F</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
